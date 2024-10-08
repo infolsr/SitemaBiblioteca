@@ -7,8 +7,8 @@ from libro import Libro
 from usuario import Usuario
 from prestamo import Prestamo
 
-libro1 = Libro(1, "1984", "George Orwell")
-libro2 = Libro(2, "Cien años de soledad", "Gabriel García Márquez")
+libro1 = Libro(1, "Mujeres del Alma Mia", "Isabel Allende")
+libro2 = Libro(2, "Palomita Blanca", "Enrique Lafourcade")
 usuario1 = Usuario(1, "Juan Pérez")
 usuario2 = Usuario(2, "Ana López")
 
