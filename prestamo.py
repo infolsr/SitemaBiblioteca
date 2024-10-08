@@ -8,17 +8,20 @@ class Prestamo:
 
     def realizarPrestamo(self):
         if not self.ocupado:
-            self.libro.prestarlibro()
-            self.fecha_prestamo = date.today()  # Establecemos la fecha del préstamo
-            self.ocupado = True
-            print(f"Préstamo realizado: {self.libro.titulo} prestado a {self.usuario.nombre} el {self.fecha_prestamo}.")
+            if not self.libro.prestamo:  # Verifica si el libro está disponible
+                self.libro.prestarlibro()  # Realiza el préstamo
+                self.fecha_prestamo = date.today()  # Establece la fecha del préstamo
+                self.ocupado = True
+                print(f"Préstamo realizado: '{self.libro.titulo}' prestado a {self.usuario.nombre} el {self.fecha_prestamo}.")
+            else:
+                print(f"No se puede realizar el préstamo, el libro '{self.libro.titulo}' ya está prestado.")
         else:
-            print(f"El préstamo ya está activo.")
+            print("El préstamo ya está activo.")
 
     def finalizar_prestamo(self):
         if self.ocupado:
             self.libro.devolverlibro()  # Cambia el estado del libro a disponible
             self.ocupado = False
-            print(f"Préstamo finalizado: {self.libro} devuelto por {self.usuario}.")
+            print(f"Préstamo finalizado: '{self.libro}' devuelto por {self.usuario}.")
         else:
             print("No hay préstamo activo.")

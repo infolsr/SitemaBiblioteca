@@ -6,20 +6,17 @@ class Libro:
         self.prestamo = False
 
     def prestarlibro(self):
-        if not self.prestamo: #si no es verdadero prestar
-            self.prestamo =True # cambia estado a prestado
+        if not self.prestamo:  # Si no está prestado
+            self.prestamo = True  # Cambia estado a prestado
         else:
-            print("El libro ya está prestado")
+            print("El libro ya está prestado.")
 
     def devolverlibro(self):
-        if self.prestamo: 
-            self.prestamo =False
+        if self.prestamo:
+            self.prestamo = False  # Cambia estado a disponible
         else:
-            print("el libro no está prestado")
+            print("El libro no está prestado.")
 
     def __str__(self):
-        if self.prestamo:
-            estado = "No Disponible"
-        else:
-            estado = "Disponible"
+        estado = "No Disponible" if self.prestamo else "Disponible"
         return f"ID: {self.id_libro} | Título: {self.titulo} | Autor: {self.autor} | Estado: {estado}"
