@@ -5,15 +5,31 @@
 from datetime import date
 from libro import Libro
 from usuario import Usuario
-from prestamo import Prestamo
+from Datos import libros
+from Datos import usuarios
 
-libro1 = Libro(1, "Mujeres del Alma Mia", "Isabel Allende")
-libro2 = Libro(2, "Palomita Blanca", "Enrique Lafourcade")
-usuario1 = Usuario(1, "Luis Gonzalez")
-usuario2 = Usuario(2, "Roberto Maya")
-usuario3 = Usuario(3, "Fernando Godoy")
+from biblioteca import Biblioteca
 
-usuario1.pedirLibro(libro1) 
-usuario2.pedirLibro(libro1)
-usuario1.devolver_libro(libro1)
-usuario2.pedirLibro(libro1)
+#lista_libros=[]
+#for id_libro, datos in libros.items():
+#    libro = Libro(id_libro, datos["titulo"], datos["autor"])
+#    lista_libros.append(libro)
+
+#lista_usuarios=[]
+#for datos in usuarios.values():
+#    usuario = Usuario(datos["id_usuario"],datos["nombre"])
+#    lista_usuarios.append(usuario)
+
+#for libro in lista_libros:
+#    print (libro)
+#for usuario in lista_usuarios:
+#    print (usuario)
+
+#usuario1.pedirLibro(libro1) 
+#usuario2.pedirLibro(libro1)
+#usuario1.devolver_libro(libro1)
+#usuario2.pedirLibro(libro1)
+
+
+bibioteca = Biblioteca()
+bibioteca.menu()

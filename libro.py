@@ -16,3 +16,10 @@ class Libro:
             self.prestamo =False
         else:
             print("el libro no está prestado")
+
+    def __str__(self):
+        if self.prestamo:
+            estado = "No Disponible"
+        else:
+            estado = "Disponible"
+        return f"ID: {self.id_libro} | Título: {self.titulo} | Autor: {self.autor} | Estado: {estado}"

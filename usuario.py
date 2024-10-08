@@ -21,3 +21,6 @@ class Usuario:
             print(f"{self.nombre} ha devuelto el libro '{libro.titulo}'.")
         else:
             print(f"{self.nombre} no tiene el libro '{libro.titulo}' en préstamo.")
+    
+    def __str__(self):
+        return f"ID: {self.id_usuario} | Nombre: {self.nombre}"
