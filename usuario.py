@@ -1,3 +1,4 @@
+from prestamo import Prestamo
 class Usuario:
     def __init__(self, id_usuario,nombre):
         self.id_usuario = id_usuario
