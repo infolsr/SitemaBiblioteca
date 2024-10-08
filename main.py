@@ -25,6 +25,14 @@ class usuario:
     def __init__(self, id_usuario,nombre,):
         self.id_usuario = id_usuario
         self.nombre = nombre
+    
+    def pedirLibro(self,libro):
+        if libro.prestamo == True:
+            print (f"{libro.titulo} esta prestado")
+        else:
+            Prestamo = prestamo(libro)
+            Prestamo = realizarPrestamo
+    
 
 class prestamo:
     def __init__(self, usuario, libro):
