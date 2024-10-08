@@ -17,7 +17,7 @@ class Prestamo:
 
     def finalizar_prestamo(self):
         if self.ocupado:
-            self.libro.devolverlibro()
+            self.libro.devolverlibro()  # Cambia el estado del libro a disponible
             self.ocupado = False
             print(f"Préstamo finalizado: {self.libro} devuelto por {self.usuario}.")
         else:

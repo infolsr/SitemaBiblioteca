@@ -12,14 +12,14 @@ libros= {
 }
 
 usuarios = {
-    1: {"id_usuario": "U001", "nombre": "Juan Pérez"},
-    2: {"id_usuario": "U002", "nombre": "María González"},
-    3: {"id_usuario": "U003", "nombre": "Carlos Fernández"},
-    4: {"id_usuario": "U004", "nombre": "Ana Martínez"},
-    5: {"id_usuario": "U005", "nombre": "Luis Rodríguez"},
-    6: {"id_usuario": "U006", "nombre": "Laura López"},
-    7: {"id_usuario": "U007", "nombre": "Miguel Torres"},
-    8: {"id_usuario": "U008", "nombre": "Sofía Ramírez"},
-    9: {"id_usuario": "U009", "nombre": "Pedro Sánchez"},
-    10: {"id_usuario": "U010", "nombre": "Elena Díaz"},
+    1: {"id_usuario": 1, "nombre": "Juan Pérez"},
+    2: {"id_usuario": 2, "nombre": "María González"},
+    3: {"id_usuario": 3, "nombre": "Carlos Fernández"},
+    4: {"id_usuario": 4, "nombre": "Ana Martínez"},
+    5: {"id_usuario": 5, "nombre": "Luis Rodríguez"},
+    6: {"id_usuario": 6, "nombre": "Laura López"},
+    7: {"id_usuario": 7, "nombre": "Miguel Torres"},
+    8: {"id_usuario": 8, "nombre": "Sofía Ramírez"},
+    9: {"id_usuario": 9, "nombre": "Pedro Sánchez"},
+    10: {"id_usuario": 10, "nombre": "Elena Díaz"},
 }
